@@ -26,7 +26,7 @@ class LocationViewModel: ViewModel() {
             viewModelScope.launch {
                 val result = RetrofitClient.create().getaddressfromCoordinates(
                     latlng,
-                    "AIzaSyAP4kUsMIFALkGWtshKPfxfwnoEGZ02aJA"
+                    "YOUR API KEY HERE"
                 )
                 _address.value = result.results
             }
